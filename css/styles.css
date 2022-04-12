@@ -1,0 +1,137 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+header {
+    width: 100%;
+    position: absolute;
+}
+header .header__container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.header__container .logo {
+    width: 65px;
+    height: 65px;
+    transform: translateY(50%);
+    margin-left: 150px;
+    position:absolute;
+}
+.header__container nav {
+    display: flex;
+    grid-column: 1;
+    height: 65px;
+    justify-self: end;
+    margin-right: 150px;
+}
+.header__container nav .navbar {
+    align-self: center;
+}
+.header__container .navbar ul {
+    list-style: none;
+    display: flex;
+    width: 350px;
+    justify-content: space-evenly;
+}
+.header__container .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+.header__container .navbar ul li a:hover {
+    color: #f26c4f;
+    transition: 0.5s  ease-in-out;
+}
+
+/* _____________Text_Name_&_Picture_______________ */
+main .home__container {
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    height: calc(100vh );
+    /* background-image: url("https://i.postimg.cc/XvDhGscv/pensando.jpg"); */
+    background-image: url("https://i.postimg.cc/Y2PsV5Kq/stock-photo-1046716639.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    background-position: calc(100% / 2);
+    /* background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(37,36,26,0.9808298319327731) 47%, rgba(2,26,47,1) 100%); */
+}
+.home__container .home__grid {
+    grid-column: 2;
+    align-self: center;
+    /* display: grid;
+    grid-auto-rows: 1fr 1fr; */
+    
+}   
+
+.home__container .home__grid .icons {
+   margin: 0 0 25px 25px;
+}
+.home__container .home__grid .icons .iconify {
+   margin: 0 10px 0 0;
+}
+.home__container .home__grid .name__text {
+    color: white;
+    margin-left: 25px;
+    
+}
+/* ______Onli_Text_________ */
+.home__container .home__grid .name__text .text1 {
+    font-size: 2.7rem;
+}
+.home__container .home__grid .name__text .text2 {
+    font-size: 7.5rem;
+}
+.home__container .home__grid .name__text .text3 {
+    font-size: 4rem;
+}
+.home__container .home__grid .name__text .text3 span {
+    color: #f26c4f;
+}
+/* ___________Portfolio__________________________ */
+main .portfolio__container {
+    padding: 0 10px 0 10px;
+    background-color: #010413;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    color: white;
+}
+main .portfolio__container .title__h2 {
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 2rem;
+}
+.portfolio__container .portfolio__picture__logo__h2__container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.portfolio__container .aboutMe__container {
+    padding: 10px;
+}
+.portfolio__container .aboutMe__container figure {
+    margin-bottom: 40px;
+}
+.portfolio__container .aboutMe__container .text__aboutMe {
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+}
+.portfolio__container .aboutMe__container .card__AboutMe {
+    background-color: #090c17;
+    padding: 30px;
+    font-size: 1.3rem;
+}
+.portfolio__container .aboutMe__container .card__AboutMe dt {
+    color: #f26c4f;
+}
